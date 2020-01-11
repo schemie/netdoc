@@ -74,16 +74,16 @@ void Main()
 				summary = rdr["summary"].ToString();
 				//Console.WriteLine(email);
 
-				String data = $"Patient : {first} {last}\n"
-								+ $"DOB: {sex}    Sex: {sex}\n"
-								+ $"PatientID: {patientid}\n"
-								+ $"Phone: {phone}\n"
-								+ $"E - Mail : {email}\n"
-								+ $"Address: {address}\n"
-								+ $"Document Date : {dob}\n"
-								+ $"Document Summary : {summary}";
-			
-			path = $"D:\\sandbox\\netdoc\\01_docs_extracted\\{sdid}\\{sdid}\\summary.txt";
+				String data = $"Patient : {first} {last}\r\n"
+								+ $"DOB: {sex}    Sex: {sex}\r\n"
+								+ $"PatientID: {patientid}\r\n"
+								+ $"Phone: {phone}\r\n"
+								+ $"E - Mail : {email}\r\n"
+								+ $"Address: {address}\r\n\r\n"
+								+ $"Document Date : {dob}\r\n"
+								+ $"Document Summary : {summary}\r\n\r\n";
+
+				path = $"D:\\sandbox\\netdoc\\01_docs_extracted\\{pid}\\{sdid}\\summary.txt";
 			
 			//Console.WriteLine(data);
 			Console.WriteLine(path);

@@ -55,7 +55,7 @@ void Main()
 				data = rdr["data"].ToString();
 				linkid = rdr["linkid"].ToString();
 
-				path = $"D:\\sandbox\\netdoc\\01_docs_extracted\\{sdid}\\{parent}\\{clindate}\\{linkid}\\data.rtf";
+				path = $"D:\\sandbox\\netdoc\\01_docs_extracted\\{pid}\\{parent}\\{clindate}\\{linkid}\\data.rtf";
 
 				//Console.WriteLine(path);
 				Directory.CreateDirectory(Path.GetDirectoryName(path));

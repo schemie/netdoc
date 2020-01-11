@@ -14,7 +14,7 @@ void Main()
 
 		using (var command = connection.CreateCommand())
 		{
-			command.CommandText = @"select top 10
+			command.CommandText = @"select
 										d.pid,
 										d.sdid,
 										d.clinicaldate,
@@ -82,7 +82,7 @@ void Main()
 
 				Console.WriteLine(signature);
 
-				path = $"D:\\sandbox\\netdoc\\01_docs_extracted\\{sdid}\\{parent}\\{clindate}\\{linkid}\\signature_{linkid}.rtf";
+				path = $"D:\\sandbox\\netdoc\\01_docs_extracted\\{pid}\\{parent}\\{clindate}\\{linkid}\\signature_{linkid}.rtf";
 
 				Console.WriteLine(path);
 				Directory.CreateDirectory(Path.GetDirectoryName(path));
