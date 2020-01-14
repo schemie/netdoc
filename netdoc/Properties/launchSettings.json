@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "netdoc": {
+      "commandName": "Project",
+      "commandLineArgs": "custom_config.json"
+    }
+  }
+}
